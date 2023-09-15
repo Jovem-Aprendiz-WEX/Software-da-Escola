@@ -1,15 +1,13 @@
 package model;
 
-import java.util.Date;
-
 public class Disciplina {
 
     private String nome_disciplina;
     private String descricao;
     private float carga_horaria;
     private int codigo;
-    private Date data_inicio;
-    private Date data_fim;
+    private String data_inicio;
+    private String data_fim;
     private float modelo;
 
     public String getNome_disciplina(){
@@ -44,19 +42,19 @@ public class Disciplina {
         this.codigo = codigo;
     }
 
-    public Date getData_inicio() {
+    public String getData_inicio() {
         return data_inicio;
     }
 
-    public void setData_inicio(Date data_inicio) {
+    public void setData_inicio(String data_inicio) {
         this.data_inicio = data_inicio;
     }
 
-    public Date getData_fim() {
+    public String getData_fim() {
         return data_fim;
     }
 
-    public void setData_fim(Date data_fim) {
+    public void setData_fim(String data_fim) {
         this.data_fim = data_fim;
     }
 
