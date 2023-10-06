@@ -8,7 +8,7 @@ public class Aluno {
     private String data_entrada;
     private String data_saida;
     private String status;
-    private List   notas;
+    private List<Notas>   notas;
 
     public Aluno(){
 
@@ -46,11 +46,11 @@ public class Aluno {
         this.status = status;
     }
 
-    public List getnotas(){
+    public List<Notas> getnotas(){
         return notas;
     }
 
-    public void setnotas( List notas){
+    public void setnotas(List<Notas> notas){
         this.notas = notas;
     }
 
