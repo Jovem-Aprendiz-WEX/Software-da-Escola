@@ -1,150 +1,120 @@
 package model.teste;
 
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+import model.Pessoa;
 
 public class PessoaTest {
-    @Test
-    public void testGetBairro() {
 
+    @Test
+    public void testGetSetBairro() {
+        Pessoa pessoa = new Pessoa();
+        pessoa.setBairro("Centro");
+        assertEquals("Centro", pessoa.getBairro());
     }
 
     @Test
-    public void testGetCep() {
-
+    public void testGetSetCep() {
+        Pessoa pessoa = new Pessoa();
+        pessoa.setCep("12345-678");
+        assertEquals("12345-678", pessoa.getCep());
     }
 
     @Test
-    public void testGetCidade() {
-
+    public void testGetSetCidade() {
+        Pessoa pessoa = new Pessoa();
+        pessoa.setCidade("Cidade X");
+        assertEquals("Cidade X", pessoa.getCidade());
     }
 
     @Test
-    public void testGetCpf() {
-
+    public void testGetSetCpf() {
+        Pessoa pessoa = new Pessoa();
+        pessoa.setCpf("123456789");
+        assertEquals("123456789", pessoa.getCpf());
     }
 
     @Test
-    public void testGetData_nascimento() {
-
+    public void testGetSetData_nascimento() {
+        Pessoa pessoa = new Pessoa();
+        pessoa.setData_nascimento("01/01/2000");
+        assertEquals("01/01/2000", pessoa.getData_nascimento());
     }
 
     @Test
-    public void testGetEmail() {
-
+    public void testGetSetEmail() {
+        Pessoa pessoa = new Pessoa();
+        pessoa.setEmail("jorge@example.com");
+        assertEquals("jorge@example.com", pessoa.getEmail());
     }
 
     @Test
-    public void testGetEndereco() {
-
+    public void testGetSetEndereco() {
+        Pessoa pessoa = new Pessoa();
+        pessoa.setEndereco("Rua ABC, 123");
+        assertEquals("Rua ABC, 123", pessoa.getEndereco());
     }
 
     @Test
-    public void testGetEstado() {
-
+    public void testGetSetEstado() {
+        Pessoa pessoa = new Pessoa();
+        pessoa.setEstado("Estado Y");
+        assertEquals("Estado Y", pessoa.getEstado());
     }
 
     @Test
-    public void testGetLogradouro() {
-
+    public void testGetSetLogradouro() {
+        Pessoa pessoa = new Pessoa();
+        pessoa.setLogradouro("Logradouro Z");
+        assertEquals("Logradouro Z", pessoa.getLogradouro());
     }
 
     @Test
-    public void testGetMae() {
-
+    public void testGetSetMae() {
+        Pessoa pessoa = new Pessoa();
+        pessoa.setMae("Maria");
+        assertEquals("Maria", pessoa.getMae());
     }
 
     @Test
-    public void testGetNome() {
-
+    public void testGetSetNome() {
+        Pessoa pessoa = new Pessoa();
+        pessoa.setNome("Jorge");
+        assertEquals("Jorge", pessoa.getNome());
     }
 
     @Test
-    public void testGetNumero() {
-
+    public void testGetSetNumero() {
+        Pessoa pessoa = new Pessoa();
+        pessoa.setNumero(42);
+        assertEquals(42, pessoa.getNumero());
     }
 
     @Test
-    public void testGetSexo() {
-
+    public void testGetSetSexo() {
+        Pessoa pessoa = new Pessoa();
+        pessoa.setSexo("Masculino");
+        assertEquals("Masculino", pessoa.getSexo());
     }
 
     @Test
-    public void testGetTelefone() {
-
-    }
-
-    @Test
-    public void testSetBairro() {
-
-    }
-
-    @Test
-    public void testSetCep() {
-
-    }
-
-    @Test
-    public void testSetCidade() {
-
-    }
-
-    @Test
-    public void testSetCpf() {
-
-    }
-
-    @Test
-    public void testSetData_nascimento() {
-
-    }
-
-    @Test
-    public void testSetEmail() {
-
-    }
-
-    @Test
-    public void testSetEndereco() {
-
-    }
-
-    @Test
-    public void testSetEstado() {
-
-    }
-
-    @Test
-    public void testSetLogradouro() {
-
-    }
-
-    @Test
-    public void testSetMae() {
-
-    }
-
-    @Test
-    public void testSetNome() {
-
-    }
-
-    @Test
-    public void testSetNumero() {
-
-    }
-
-    @Test
-    public void testSetSexo() {
-
-    }
-
-    @Test
-    public void testSetTelefone() {
-
+    public void testGetSetTelefone() {
+        Pessoa pessoa = new Pessoa();
+        pessoa.setTelefone("123-456-789");
+        assertEquals("123-456-789", pessoa.getTelefone());
     }
 
     @Test
     public void testToString() {
+        Pessoa pessoa = new Pessoa();
+        pessoa.setNome("Jorge");
+        pessoa.setCpf("123456789");
+        pessoa.setEndereco("Rua XYZ, 123");
 
+        String expected = "Pessoa [nome=Jorge, cpf=123456789, sexo=null, data_nascimento=null, mae=null, " +
+                          "telefone=null, endereco=Rua XYZ, 123, logradouro=null, email=null, cep=null, " +
+                          "cidade=null, estado=null, bairro=null, numero=0]";
+
+        assertEquals(expected, pessoa.toString());
     }
 }
