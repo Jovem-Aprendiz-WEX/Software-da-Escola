@@ -1,75 +1,57 @@
 package model.teste;
 
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+import model.Disciplina;
 
 public class DisciplinaTest {
-    @Test
-    public void testGetCarga_horaria() {
 
+    @Test
+    public void testGetSetNome_disciplina() {
+        Disciplina disciplina = new Disciplina();
+        disciplina.setNome_disciplina("Matemática");
+        assertEquals("Matemática", disciplina.getNome_disciplina());
     }
 
     @Test
-    public void testGetCodigo() {
-
+    public void testGetSetDescricao() {
+        Disciplina disciplina = new Disciplina();
+        disciplina.setDescricao("Esta é uma disciplina de matemática.");
+        assertEquals("Esta é uma disciplina de matemática.", disciplina.getDescricao());
     }
 
     @Test
-    public void testGetData_fim() {
-
+    public void testGetSetCarga_horaria() {
+        Disciplina disciplina = new Disciplina();
+        disciplina.setCarga_horaria(60.5f);
+        assertEquals(60.5f, disciplina.getCarga_horaria(), 0.001f);
     }
 
     @Test
-    public void testGetData_inicio() {
-
+    public void testGetSetCodigo() {
+        Disciplina disciplina = new Disciplina();
+        disciplina.setCodigo(123);
+        assertEquals(123, disciplina.getCodigo());
     }
 
     @Test
-    public void testGetDescricao() {
-
+    public void testGetSetData_inicio() {
+        Disciplina disciplina = new Disciplina();
+        disciplina.setData_inicio("01/01/2022");
+        assertEquals("01/01/2022", disciplina.getData_inicio());
     }
 
     @Test
-    public void testGetModelo() {
-
+    public void testGetSetData_fim() {
+        Disciplina disciplina = new Disciplina();
+        disciplina.setData_fim("31/12/2022");
+        assertEquals("31/12/2022", disciplina.getData_fim());
     }
 
     @Test
-    public void testGetNome_disciplina() {
-
-    }
-
-    @Test
-    public void testSetCarga_horaria() {
-
-    }
-
-    @Test
-    public void testSetCodigo() {
-
-    }
-
-    @Test
-    public void testSetData_fim() {
-
-    }
-
-    @Test
-    public void testSetData_inicio() {
-
-    }
-
-    @Test
-    public void testSetDescricao() {
-
-    }
-
-    @Test
-    public void testSetModelo() {
-
-    }
-
-    @Test
-    public void testSetNome_disciplina() {
-
+    public void testGetSetModelo() {
+        Disciplina disciplina = new Disciplina();
+        disciplina.setModelo(5.5f);
+        assertEquals(5.5f, disciplina.getModelo(), 0.001f);
     }
 }
