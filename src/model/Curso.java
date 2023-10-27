@@ -6,7 +6,7 @@ public class Curso {
     
     private String nome_curso;
     private String descricao;
-    private List disciplinas;
+    private List<Disciplina> disciplinas;
     private int codigo;
     
     public Curso() {
@@ -24,10 +24,10 @@ public class Curso {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-    public List getDisciplinas() {
+    public List<Disciplina> getDisciplinas() {
         return disciplinas;
     }
-    public void setDisciplinas(List disciplinas) {
+    public void setDisciplinas(List<Disciplina> disciplinas) {
         this.disciplinas = disciplinas;
     }
     public int getCodigo() {
