@@ -1,0 +1,12 @@
+model\Turma.class
+model\Disciplina.class
+model\Professor.class
+App.class
+view\TelaMenu$1.class
+view\TelaMenu$2.class
+model\Notas.class
+model\Pessoa.class
+view\TelaMenu.class
+model\Aluno.class
+model\Curso.class
+model\Secretario.class
