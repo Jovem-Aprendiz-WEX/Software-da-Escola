@@ -9,6 +9,15 @@ public class Disciplina {
     private String data_inicio;
     private String data_fim;
     private float modelo;
+    private int id_disciplina;
+
+    public int getId_disciplina() {
+        return id_disciplina;
+    }
+
+    public void setId_disciplina(int id_disciplina) {
+        this.id_disciplina = id_disciplina;
+    }
 
     public String getNome_disciplina(){
         return nome_disciplina;
